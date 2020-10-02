@@ -1,0 +1,13 @@
+pageobjects\ButtonsPage.class
+pageobjects\WebTablePage.class
+pageobjects\TextBoxPage.class
+tests\ElementsTest.class
+tests\BaseTest.class
+pageobjects\BasePage.class
+pageobjects\RadioButtonPage.class
+pageobjects\HomePage.class
+tests\FormsTest.class
+pageobjects\LinksPage.class
+pageobjects\CheckBoxPage.class
+pageobjects\ElementsPage.class
+pageobjects\FormsPage.class
