@@ -1,19 +1,11 @@
-package tests;
+package test.java.tests;
 
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
-import pageobjects.HomePage;
-import pageobjects.LinksPage;
-import pageobjects.RadioButtonPage;
-import pageobjects.WebTablePage;
+import test.java.pageobjects.*;
 import utils.Log;
 import utils.Utils;
-import pageobjects.ButtonsPage;
-import pageobjects.ElementsPage;
 
 
 public class ElementsTest extends BaseTest {
@@ -74,10 +66,10 @@ public class ElementsTest extends BaseTest {
 	@Test
 	public void test03_radioButtonTest() {
 		Log.info("start test03_radioButtonTest");
-	    ElementsPage el = new ElementsPage(driver);
+		ElementsPage el = new ElementsPage(driver);
 		el.elementToTest(categoryToTest3);
 		Log.info("move to category: " + categoryToTest3);
-		RadioButtonPage rb = new RadioButtonPage(driver);	
+		RadioButtonPage rb = new RadioButtonPage(driver);
 		softAssert.assertTrue(rb.checkIfTestExist());
 		softAssert.assertTrue(rb.checkRadio("Yes", "Impressive", "No"));
 		softAssert.assertTrue(rb.clickRadio("Impressive"));

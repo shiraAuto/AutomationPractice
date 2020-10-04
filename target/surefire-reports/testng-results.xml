@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-26T21:30:03Z" name="example suite 1" finished-at="2020-09-26T21:30:24Z" duration-ms="20621">
+  <suite started-at="2020-10-03T23:05:10Z" name="example suite 1" finished-at="2020-10-03T23:05:38Z" duration-ms="28201">
     <groups>
     </groups>
-    <test started-at="2020-09-26T21:30:03Z" name="Sanity" finished-at="2020-09-26T21:30:24Z" duration-ms="20621">
+    <test started-at="2020-10-03T23:05:10Z" name="Sanity" finished-at="2020-10-03T23:05:38Z" duration-ms="28201">
       <class name="tests.FormsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FormsTest@610f7aa]" started-at="2020-09-26T21:30:03Z" name="setup" finished-at="2020-09-26T21:30:14Z" duration-ms="10930" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.FormsTest@610f7aa]" started-at="2020-10-03T23:05:10Z" name="setup" finished-at="2020-10-03T23:05:27Z" duration-ms="17939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test00_moveToForms()[pri:0, instance:tests.FormsTest@610f7aa]" started-at="2020-09-26T21:30:14Z" name="test00_moveToForms" finished-at="2020-09-26T21:30:16Z" duration-ms="1845" status="PASS">
+        <test-method signature="test00_moveToForms()[pri:0, instance:tests.FormsTest@610f7aa]" started-at="2020-10-03T23:05:28Z" name="test00_moveToForms" finished-at="2020-10-03T23:05:30Z" duration-ms="2135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test00_moveToForms -->
-        <test-method is-config="true" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.FormsTest@610f7aa]" started-at="2020-09-26T21:30:16Z" name="failedTest" finished-at="2020-09-26T21:30:16Z" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.FormsTest@610f7aa]" started-at="2020-10-03T23:05:30Z" name="failedTest" finished-at="2020-10-03T23:05:30Z" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failedTest -->
-        <test-method signature="test01_practiceFormsTest()[pri:0, instance:tests.FormsTest@610f7aa]" started-at="2020-09-26T21:30:16Z" name="test01_practiceFormsTest" finished-at="2020-09-26T21:30:23Z" duration-ms="6723" status="PASS">
+        <test-method signature="test01_practiceFormsTest()[pri:0, instance:tests.FormsTest@610f7aa]" started-at="2020-10-03T23:05:30Z" name="test01_practiceFormsTest" finished-at="2020-10-03T23:05:37Z" duration-ms="6988" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test01_practiceFormsTest -->
-        <test-method is-config="true" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.FormsTest@610f7aa]" started-at="2020-09-26T21:30:23Z" name="failedTest" finished-at="2020-09-26T21:30:23Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="failedTest(org.testng.ITestResult)[pri:0, instance:tests.FormsTest@610f7aa]" started-at="2020-10-03T23:05:37Z" name="failedTest" finished-at="2020-10-03T23:05:37Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failedTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.FormsTest@610f7aa]" started-at="2020-09-26T21:30:23Z" name="tearDown" finished-at="2020-09-26T21:30:24Z" duration-ms="1048" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.FormsTest@610f7aa]" started-at="2020-10-03T23:05:37Z" name="tearDown" finished-at="2020-10-03T23:05:38Z" duration-ms="1068" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

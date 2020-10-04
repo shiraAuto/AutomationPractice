@@ -1,9 +1,7 @@
-package tests;
+package test.java.tests;
 
 
-import java.io.File;
-import java.io.IOException;
-
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -15,9 +13,10 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.Utils;
+
+import java.io.File;
+import java.io.IOException;
 
 public class BaseTest {
 	WebDriver driver;

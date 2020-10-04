@@ -1,20 +1,13 @@
-package tests;
+package test.java.tests;
 
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
-import pageobjects.HomePage;
-import pageobjects.LinksPage;
-import pageobjects.RadioButtonPage;
-import pageobjects.WebTablePage;
+import test.java.pageobjects.FormsPage;
+import test.java.pageobjects.HomePage;
 import utils.Log;
 import utils.Utils;
-import pageobjects.ButtonsPage;
-import pageobjects.ElementsPage;
-import pageobjects.FormsPage;
+
 
 
 public class FormsTest extends BaseTest {
@@ -43,18 +36,20 @@ public class FormsTest extends BaseTest {
 	}
 	
 	@Test
-	public void test01_practiceFormsTest()  {
+	public void test01_practiceFormsTest() {
 		Log.info("start test01_practiceFormsTest");
-	    String firstname,lastname,email,gender;
+		String firstname, lastname, email, gender, mobile;
 		FormsPage ft = new FormsPage(driver);
-	    ft.moveToTest();
-	    softAssert.assertTrue(driver.getCurrentUrl().contentEquals("https://demoqa.com/automation-practice-form"));
-	    firstname = Utils.readProp("practiseform_firstname");
-	    lastname = Utils.readProp("practiseform_lastName");
+		ft.moveToTest();
+		softAssert.assertTrue(driver.getCurrentUrl().contentEquals("https://demoqa.com/automation-practice-form"));
+		firstname = Utils.readProp("practiseform_firstname");
+		lastname = Utils.readProp("practiseform_lastName");
 		email = Utils.readProp("practiseform_email");
-		gender=Utils.readProp("practiseform_gender");
-		ft.fillFormPractice(firstname, lastname, email, gender);
-	    softAssert.assertAll();
+		gender = Utils.readProp("practiseform_gender");
+		mobile = Utils.readProp("practiseform_mobile");
+		ft.fillFormPractice(firstname, lastname, email, gender, mobile);
+
+		softAssert.assertAll();
 		/*
 	    Log.info("move to test practiceForms");
 		fullName = Utils.readProp("fullName");
@@ -64,7 +59,7 @@ public class FormsTest extends BaseTest {
 		softAssert.assertTrue(el.textBoxFillForm(fullName,email,currentAddress,paymentAddress));
 		softAssert.assertAll();
 		*/
-   }
+	}
 	
    
 	

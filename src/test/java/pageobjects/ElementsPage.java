@@ -1,32 +1,30 @@
-package pageobjects;
+package test.java.pageobjects;
 
-
-import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 import utils.Log;
 
-public class ElementsPage extends BasePage{
+import java.util.List;
+
+public class ElementsPage extends BasePage {
 
 	List<WebElement> listMenu = driver.findElements(By.cssSelector(".element-list>ul>li"));
-	
-	@FindBy(css=".srp-controls__default-refinements")
+
+	@FindBy(css = ".srp-controls__default-refinements")
 	private WebElement searchBar;
-	
 
 
 	public ElementsPage(WebDriver driver) {
 		super(driver);
 	}
 
-    public void printList() {
-    	//List<WebElement> list = driver.findElements(By.cssSelector(".element-list>ul>li"));
-    	for (WebElement item : listMenu) {
+	public void printList() {
+		//List<WebElement> list = driver.findElements(By.cssSelector(".element-list>ul>li"));
+		for (WebElement item : listMenu) {
     		if(!(item.getText().isEmpty()))
 			   System.out.println(item.getText());
     		//else
